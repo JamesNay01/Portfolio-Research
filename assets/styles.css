@@ -186,6 +186,15 @@ tr:hover { background: var(--panel); }
 .standing-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
 .standing-stats .stat { border: none; }
 
+/* About / Philosophy page */
+.about-bio { font-size: 15px; line-height: 1.75; color: var(--ink-2); max-width: 680px; }
+.principle-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin-top: 18px; }
+.principle-card { border: 1px solid var(--rule); border-radius: 4px; padding: 18px 20px; }
+.principle-card h3 { font-family: var(--serif); font-size: 16px; font-weight: 600; margin: 0 0 8px; }
+.principle-card p { font-size: 13.5px; line-height: 1.6; color: var(--ink-2); margin: 0 0 10px; }
+.principle-card .examples { font-size: 11.5px; color: var(--text-muted); }
+.principle-card .examples a { font-family: var(--mono); font-weight: 600; margin-right: 8px; }
+
 /* Yearly comparison bars */
 .yearly-chart-wrap { border: 1px solid var(--rule); border-radius: 4px; padding: 20px; margin-top: 28px; }
 .yearly-chart-wrap svg { width: 100%; height: auto; display: block; }

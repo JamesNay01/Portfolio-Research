@@ -18,17 +18,21 @@
   --mono: "IBM Plex Mono", "SF Mono", Consolas, monospace;
 }
 * { box-sizing: border-box; }
-html { scroll-padding-top: 70px; }
+html { scroll-padding-top: 70px; overflow-x: hidden; }
 body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
   font-family: var(--sans);
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 .mono, .num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; }
+.table-wrap table th, .table-wrap table td { white-space: nowrap; }
 
 .site-header {
   background: var(--ink);

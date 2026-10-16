@@ -152,6 +152,14 @@ tr:hover { background: var(--panel); }
   color: var(--ink-2);
   white-space: pre-line;
 }
+.thesis-divider {
+  display: flex; align-items: center; gap: 14px;
+  margin: 22px 0 18px;
+  color: var(--accent);
+  font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+}
+.thesis-divider::before, .thesis-divider::after { content: ""; flex: 1; border-top: 1px solid var(--accent); opacity: .45; }
+.thesis-part { white-space: pre-line; }
 .thesis-box.placeholder { color: var(--text-muted); font-style: italic; }
 /* Metrics-at-purchase table */
 .metrics-note { font-size: 12px; color: var(--text-muted); margin: 10px 0 20px; line-height: 1.6; }
